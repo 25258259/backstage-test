@@ -3,7 +3,6 @@ kind: Location
 metadata:
   name: test-directory
 spec:
-  type: file
   targets:
     - ./application/catalog-info.yaml
     - ./service/catalog-info.yaml
