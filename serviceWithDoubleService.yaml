@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: test-dictionary-application
+  name: test-component-with-double-system
   title: test-dictionary-double
 spec:
   system: system-1-test, system-2-test
