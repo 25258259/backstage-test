@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: system-1-test
+spec:
+  owner: backend-team
+  partOf:
+    - domain-1-test
+    - domain-2-test

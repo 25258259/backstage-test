@@ -3,6 +3,7 @@ kind: API
 metadata:
   name: test-api
 spec:
+  system: system-1-test
   type: openapi
   lifecycle: production
   owner: backend-team

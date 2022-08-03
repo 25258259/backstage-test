@@ -6,3 +6,7 @@ spec:
   targets:
     - ./application/catalog-info.yaml
     - ./service/catalog-info.yaml
+    - ./domain/catalog-info.yaml
+    - ./system/catalog-info.yaml
+    - ./domain2-info.yaml
+    - ./system2-info.yaml
