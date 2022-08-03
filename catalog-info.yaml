@@ -7,6 +7,4 @@ spec:
     - ./application/catalog-info.yaml
     - ./service/catalog-info.yaml
     - ./application/doubler-info.yaml
-    - ./serviceWithDoubleService.yaml
     - ./system/catalog-info.yaml
-    - ./system2-info.yaml
