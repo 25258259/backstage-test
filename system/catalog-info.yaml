@@ -4,6 +4,3 @@ metadata:
   name: system-1-test
 spec:
   owner: backend-team
-  partOf:
-    - domain-1-test
-    - domain-2-test
