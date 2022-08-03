@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: fs-directory
+spec:
+  type: file
+    - ./application/catalog-info.yaml
+    - ./service/catalog-info.yaml

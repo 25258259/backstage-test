@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-dictionary-application
+spec:
+  type: service
+  lifecycle: production
+  owner: backend-team
+  providesApis:
+    - test-api
