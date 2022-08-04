@@ -4,6 +4,7 @@ metadata:
   name: test-directory
 spec:
   targets:
+    - ./domain-info.yaml
     - ./application/catalog-info.yaml
     - ./service/catalog-info.yaml
     - ./application/doubler-info.yaml
