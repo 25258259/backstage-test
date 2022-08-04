@@ -8,3 +8,4 @@ spec:
     - ./service/catalog-info.yaml
     - ./application/doubler-info.yaml
     - ./system/catalog-info.yaml
+    - ./catalog-info.yaml
