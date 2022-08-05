@@ -5,3 +5,10 @@ metadata:
   description: Test Domain
 spec:
   owner: backend-team
+relations:
+  - type: hasPart
+    targetRef: "system:default/system-2-test"
+    target:
+      kind: "system"
+      namespace: "default"
+      name: "system-2-test"
