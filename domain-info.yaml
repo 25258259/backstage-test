@@ -5,6 +5,3 @@ metadata:
   description: Test Domain
 spec:
   owner: backend-team
-  hasPart: 
-    - system-2-test
-    - system-1-test

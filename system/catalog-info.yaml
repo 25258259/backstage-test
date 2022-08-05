@@ -13,5 +13,6 @@ metadata:
   name: system-2-test
 spec:
   owner: backend-team
+  domain: test-domain
 
     

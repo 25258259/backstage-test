@@ -13,3 +13,17 @@ spec:
   owner: backend-team
   definition: 
     $text: https://docs.code.g2a.com/fs/ths_searcher/api/1.10.0-SNAPSHOT/swagger.json
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  description: |
+    testing second api
+  name: test-api-2
+spec:
+  type: openapi
+  lifecycle: production
+  owner: backend-team
+  definition: 
+    $text: https://docs.code.g2a.com/fs/ths_searcher/api/1.10.0-SNAPSHOT/swagger.json
