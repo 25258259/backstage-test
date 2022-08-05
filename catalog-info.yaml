@@ -10,3 +10,4 @@ spec:
     - ./application/doubler-info.yaml
     - ./system/catalog-info.yaml
     - ./catalog-info.yaml
+    - ./templates/catalog-info.yaml
