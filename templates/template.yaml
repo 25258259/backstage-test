@@ -40,8 +40,9 @@ spec:
     - id: fetchBase
       name: Fetch Base
       action: fetch:template
+
       input:
-        url: ./template
+        url: .\test\test\packages\backend\template
         values:
           name: ${{ parameters.name }}
 
