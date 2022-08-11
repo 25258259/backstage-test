@@ -42,7 +42,7 @@ spec:
       action: fetch:template
 
       input:
-        url: .\test\test\packages\backend\template
+        url: C:\Users\m.skoryk\Desktop\Backstage_try\test\test\packages\backend\template
         values:
           name: ${{ parameters.name }}
 
