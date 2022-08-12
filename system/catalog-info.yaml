@@ -3,7 +3,7 @@ kind: System
 metadata:
   name: system-1-test
 spec:
-  owner: backend-team
+  owner: Technology
   domain: test-domain
 
 ---
@@ -12,7 +12,7 @@ kind: System
 metadata:
   name: system-2-test
 spec:
-  owner: backend-team
+  owner: Technology
   domain: test-domain
 
     
