@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: test-dictionary-application2
-  title: test-dictionary-double
+  name: test-dictionary-application-2
+
 spec:
   system: system-2-test
   type: service
   lifecycle: production
-  owner: backend-team
+  owner: group:Technology
   providesApis:
     - test-api

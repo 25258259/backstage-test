@@ -7,7 +7,7 @@ spec:
   system: system-1-test
   type: service
   lifecycle: production
-  owner: backend-team
+  owner: user:Michał Skoryk
   providesApis:
     - test-api-2
   consumesApis:
@@ -22,7 +22,7 @@ spec:
   system: system-1-test
   type: service
   lifecycle: production
-  owner: backend-team
+  owner: user:Krzysztof Tokarz
   providesApis:
     - test-api
   consumesApis:
@@ -37,6 +37,6 @@ spec:
   system: system-1-test
   type: service
   lifecycle: production
-  owner: backend-team
+  owner: group:Technology - Development
   providesApis:
     - test-api

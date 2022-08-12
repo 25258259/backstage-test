@@ -4,4 +4,4 @@ metadata:
   name: test-domain
   description: Test Domain
 spec:
-  owner: backend-team
+  owner: group:All Employees
