@@ -7,7 +7,7 @@ spec:
   system: system-1-test
   type: service
   lifecycle: production
-  owner: "Michał_Skoryk"
+  owner: michal.skoryk_zen.com
   providesApis:
     - test-api-2
   consumesApis:
@@ -22,7 +22,7 @@ spec:
   system: system-1-test
   type: service
   lifecycle: production
-  owner: "Krzysztof_Tokarz"
+  owner: krzysztof.tokarz_zen.com
   providesApis:
     - test-api
   consumesApis:
