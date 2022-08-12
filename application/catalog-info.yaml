@@ -37,6 +37,6 @@ spec:
   system: system-1-test
   type: service
   lifecycle: production
-  owner: group:Technology - Development
+  owner: group:Technology_-_Development
   providesApis:
     - test-api
