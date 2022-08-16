@@ -10,8 +10,8 @@ spec:
   providesApis:
     - test-api-2
   dependsOn:
-    - test-dictionary-application-2
-    - test-dictionary-application-3
+    - component:test-dictionary-application-2
+    - component:test-dictionary-application-3
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
