@@ -2,7 +2,6 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-dictionary-application
-  title: test-dictionary-double
 spec:
   system: system-1-test
   type: service
@@ -17,7 +16,6 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-dictionary-application-2
-  title: test-dictionary-double
 spec:
   system: system-1-test
   type: service
@@ -32,7 +30,6 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-dictionary-application-3
-  title: test-dictionary-double
 spec:
   system: system-1-test
   type: service
