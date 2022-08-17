@@ -6,7 +6,7 @@ spec:
   system: system-1-test
   type: service
   lifecycle: production
-  owner: michal.skoryk_zen.com
+  owner: user:michal.skoryk_zen.com
   providesApis:
     - test-api-2
   
@@ -19,7 +19,7 @@ spec:
   system: system-1-test
   type: service
   lifecycle: production
-  owner: krzysztof.tokarz_zen.com
+  owner: user:krzysztof.tokarz_zen.com
   
 ---
 apiVersion: backstage.io/v1alpha1
