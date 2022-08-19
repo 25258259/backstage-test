@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: 'swagger, local, test'
+  application:
+    name: ths-searcher
+  security:
+    apiClients:
+      qa:
+        roles: ROLE_QA
+      bffApiMobile:
+        roles: ROLE_BFF_API_MOBILE
+      bffApiWeb:
+        roles: ROLE_BFF_API_WEB
+      documentManager:
+        roles: ROLE_DOCUMENT_MANAGER
+      paaccount:
+        roles: ROLE_PAACCOUNT
+      mobileNotifications:
+        roles: ROLE_MOBILE_NOTIFICATIONS
+      ticketService:
+        roles: ROLE_TICKET_SERVICE
+      backoffice:
+        roles: ROLE_BACKOFFICE
+      mvs:
+        roles: ROLE_MVS

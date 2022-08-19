@@ -4,7 +4,6 @@ metadata:
   name: system-1-test
 spec:
   owner: Technology
-  domain: test-domain
 
 ---
 apiVersion: backstage.io/v1alpha1
@@ -13,6 +12,5 @@ metadata:
   name: system-2-test
 spec:
   owner: Technology
-  domain: test-domain
 
     
