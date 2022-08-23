@@ -28,4 +28,4 @@ spec:
   definition: 
     $text: https://docs.code.g2a.com/fs/ths_searcher/api/1.10.0-SNAPSHOT/swagger.json
   apiConsumedBy:
-    $text: ../applicationTHS/application.prod.yml
+    $yaml: ../applicationTHS/application.prod.yml
