@@ -23,5 +23,4 @@ spring:
         roles: ROLE_BACKOFFICE
       mvs:
         roles: ROLE_MVS
-      testDictionaryApplication-2:
-        roles: ROLE_SMTH
+      
