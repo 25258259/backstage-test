@@ -1,0 +1,37 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  title: {{values.project_name}}
+  name: {{values.application_name}}
+  description: Some description of the component-name component
+  tags:
+    - java
+    - sqlserver
+    - kafka
+  annotations:
+    grafana/tag-selector: {{values.grafana_tag}} # jak nie ma to nie powinno być puste
+spec:
+  type: service
+  lifecycle: production
+  owner: {{ values.owner }} # najlepiej wybierany z listy już istniejących
+  domain: {{ values.domain }} # też najlepiej wybierane z podanej listy
+  providesApis:
+    - "{{values.application_name}}-api"
+  
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  title: "{{values.project_name}} API"
+  name: "{{values.application_name}}-api"
+  description: Some description of the api-name interface
+spec:
+  type: openapi
+  lifecycle: production
+  
+  owner: {{values.owner }} # najlepiej wybierany z listy już istniejących
+  definition:
+    - $text: {{ values.swagger }} # link do swaggera
+  apiConsumedBy:
+    - $yaml: [tutaj ścieżka do application.yml] # udało się automatyczne tworzenie consumerów

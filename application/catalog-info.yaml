@@ -2,6 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-dictionary-application
+  annotations:
+    kafka.apache.org/consumer-groups: cluster-name/event-store-group-id
 spec:
 
   type: service
