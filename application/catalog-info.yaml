@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: test-dictionary-application
   annotations:
-    kafka.apache.org/consumer-groups: zen-cluster/event-store-group-id
+    kafka.apache.org/consumer-groups: zen-cluster/event-store-group-id/https://dashboard.com
 spec:
 
   type: service
