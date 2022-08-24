@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: test-dictionary-application
   annotations:
-    kafka.apache.org/consumer-groups: zen-cluster/event-store-group-id/https://grafana.zen.local/d/1E9uBMTnC/prod-fs_mass_transfer-request-status?viewPanel=39&orgId=1&refresh=5s
+    kafka.apache.org/consumer-groups: zen-cluster/event-store-group-id
 spec:
 
   type: service
