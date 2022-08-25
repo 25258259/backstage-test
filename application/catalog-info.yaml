@@ -1,7 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: test-dictionary-application
+  name: ths-event-store
+  title: THS event store
   annotations:
     kafka.apache.org/consumer-groups: zen-cluster/event-store-group-id
 spec:
@@ -16,7 +17,8 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: test-dictionary-application-2
+  name: ths-searcher
+  title: THS searcher
   tags:
     - "test1"
     - "test2"
@@ -40,7 +42,10 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: test-dictionary-application-3
+  name: ths-event-processor
+  title: THS event processor
+  annotiations:
+    kafka.apache.org/consumer-groups: zen-cluster/event-processor-group
 spec:
 
   type: service
