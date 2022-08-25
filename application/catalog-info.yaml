@@ -44,7 +44,7 @@ kind: Component
 metadata:
   name: ths-event-processor
   title: THS event processor
-  annotiations:
+  annotations:
     kafka.apache.org/consumer-groups: zen-cluster/ths-event-processor-group
 spec:
 
