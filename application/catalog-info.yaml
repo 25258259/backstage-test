@@ -5,6 +5,7 @@ metadata:
   title: THS event store
   annotations:
     kafka.apache.org/consumer-groups: zen-cluster/event-store-group-id
+    jenkins.io/job-full-name: g2a:zen/ths-event-processor.build
 spec:
 
   type: service
