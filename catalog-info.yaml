@@ -7,5 +7,3 @@ spec:
     - ./domain-info.yaml
     - ./application/catalog-info.yaml
     - ./service/catalog-info.yaml
-    - ./system/catalog-info.yaml
-    - ./catalog-info.yaml
