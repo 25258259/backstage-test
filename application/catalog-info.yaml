@@ -31,7 +31,8 @@ metadata:
     - "test8"
     - "test9"
     - "test10"
-
+  annotations:
+    jenkins.io/job-full-name: g2a:zen/ths-event-processor.build
 spec:
 
   type: service
@@ -47,6 +48,7 @@ metadata:
   title: THS event processor
   annotations:
     kafka.apache.org/consumer-groups: zen-cluster/ths-event-processor-group
+    jenkins.io/job-full-name: g2a:zen/ths-event-processor.build
 spec:
 
   type: service
