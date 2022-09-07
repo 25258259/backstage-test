@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: ths-event-store
   title: THS event store
+  tags:
+    - "kafka"
   annotations:
     jenkins.io/job-full-name: g2a:FinancialServices/ths-event-store.build
     kafka.apache.org/consumer-groups: zen-cluster/event-store-group-id/APG
@@ -51,6 +53,8 @@ kind: Component
 metadata:
   name: ths-event-processor
   title: THS event processor
+  tags:
+    - "kafka"
   annotations:
     kafka.apache.org/consumer-groups: zen-cluster/ths-event-processor-group/EPG
     jenkins.io/job-full-name: zen:FinancialServices/ths-event-processor.build
