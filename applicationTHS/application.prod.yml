@@ -23,4 +23,7 @@ spring:
         roles: ROLE_BACKOFFICE
       mvs:
         roles: ROLE_MVS
-      
+      thsEventStore:
+        roles: test
+kafka:
+  groupId: 'event-store-group-id'

@@ -4,15 +4,22 @@ metadata:
   name: ths-event-store
   title: THS event store
   annotations:
-    kafka.apache.org/consumer-groups: zen-cluster/event-store-group-id
-    jenkins.io/job-full-name-zen: g2a:zen/ths-event-processor.build
+    jenkins.io/job-full-name: g2a:FinancialServices/ths-event-store.build
+    kafka.apache.org/consumer-groups: zen-cluster/event-store-group-id/APG
 spec:
+  domain: test-domain
   type: service
   lifecycle: production
   owner: user:michal.skoryk_zen.com
   providesApis:
     - test-api-2
-  
+  kafka:
+    topic:
+      appl_name_abbriev: APG
+    consumerGroupFile: 
+      test: przechodzi
+    
+      # $yaml: "../applicationTHS/application.prod.yml" 
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -31,7 +38,7 @@ metadata:
     - "test9"
     - "test10"
   annotations:
-    jenkins.io/job-full-name-zen: g2a:zen/ths-event-processor.build
+    jenkins.io/job-full-name: zen:FinancialServices/ths-searcher.build
 spec:
   type: service
   lifecycle: production
@@ -45,12 +52,33 @@ metadata:
   name: ths-event-processor
   title: THS event processor
   annotations:
-    kafka.apache.org/consumer-groups: zen-cluster/ths-event-processor-group
-    jenkins.io/job-full-name-zen: g2a:zen/ths-event-processor.build
+    kafka.apache.org/consumer-groups: zen-cluster/ths-event-processor-group/EPG
+    jenkins.io/job-full-name: zen:FinancialServices/ths-event-processor.build
 spec:
+  kafka:
+    topic: 
+      appl_name_abbriev: "EPG"
+    consumerGroupFile: 
+      $yaml: ../applicationTHS/application.prod.yml 
   type: service
   lifecycle: production
   owner: group:Technology_-_Development
   providesApis:
     - test-api
   domain: test-domain
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: api-name
+  description: Some description of the api-name interface
+spec:
+  type: openapi
+  lifecycle: production
+  owner: group:group-name
+  system: system-name
+  definition: |
+    {asdfasdfasdf}
+  apiConsumedBy:
+    $yaml: ../applicationTHS/application.prod.yml
