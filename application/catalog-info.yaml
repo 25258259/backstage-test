@@ -7,7 +7,6 @@ metadata:
     - "kafka"
   annotations:
     jenkins.io/job-full-name: g2a:FinancialServices/ths-event-store.build
-    kafka.apache.org/consumer-groups: zen-cluster/event-store-group-id/APG
 spec:
   domain: test-domain
   type: service
@@ -54,12 +53,11 @@ metadata:
   tags:
     - "kafka"
   annotations:
-    kafka.apache.org/consumer-groups: zen-cluster/ths-event-processor-group/EVENT_PROCESSOR
     jenkins.io/job-full-name: zen:FinancialServices/ths-event-processor.build
 spec:
   kafka:
     topic: 
-      appl_name_abbriev: "EPG"
+      appl_name_abbriev: "EVENT_PROCESSOR"
     consumerGroupFile: 
       $yaml: ../applicationTHS/application.prod.yml 
   type: service
