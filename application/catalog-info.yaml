@@ -19,9 +19,7 @@ spec:
     topic:
       appl_name_abbriev: APG
     consumerGroupFile: 
-      test: przechodzi
-    
-      # $yaml: "../applicationTHS/application.prod.yml" 
+      $yaml: ../applicationTHS/application.prod.yml
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -56,7 +54,7 @@ metadata:
   tags:
     - "kafka"
   annotations:
-    kafka.apache.org/consumer-groups: zen-cluster/ths-event-processor-group/EPG
+    kafka.apache.org/consumer-groups: zen-cluster/ths-event-processor-group/EVENT_PROCESSOR
     jenkins.io/job-full-name: zen:FinancialServices/ths-event-processor.build
 spec:
   kafka:
