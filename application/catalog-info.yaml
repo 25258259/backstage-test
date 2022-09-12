@@ -17,8 +17,6 @@ spec:
   kafka:
     topic:
       appl_name_abbriev: APG
-    consumerGroupFile: 
-      $yaml: ../applicationTHS/application.prod.yml
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -56,8 +54,6 @@ metadata:
     jenkins.io/job-full-name: zen:FinancialServices/ths-event-processor.build
 spec:
   kafka:
-    topic: 
-      appl_name_abbriev: "EVENT_PROCESSOR"
     consumerGroupFile: 
       $yaml: ../applicationTHS/application.prod.yml 
   type: service
