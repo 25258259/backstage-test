@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ths-event-store
-  title: THS event store
+  name: ths-event-store-test
+  title: THS event store test
   tags:
     - "kafka"
   annotations:
@@ -21,8 +21,8 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ths-searcher
-  title: THS searcher
+  name: ths-searcher-test
+  title: THS searcher test
   tags:
     - "test1"
     - "test2"
@@ -46,8 +46,8 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ths-event-processor
-  title: THS event processor
+  name: ths-event-processor-test
+  title: THS event processor test
   tags:
     - "kafka"
   annotations:
@@ -72,9 +72,9 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: group:group-name
-  system: system-name
-  definition: |
-    {asdfasdfasdf}
+  owner: username
+  domain: test-domain
+  definition: 
+    $text: https://docs.code.g2a.com/epg/paeco/docs/master/pages/api/open-api/api.yaml
   apiConsumedBy:
     $yaml: ../applicationTHS/application.prod.yml
