@@ -75,6 +75,6 @@ spec:
   owner: username
   domain: test-domain
   definition: 
-    $text: https://docs.code.g2a.com/epg/paeco/docs/master/pages/api/open-api/api.yaml
+    $text: https://artifactory.zen.local/artifactory/docs-local/epg/bff/docs/master/page/open-api/api.yaml
   apiConsumedBy:
     $yaml: ../applicationTHS/application.prod.yml
