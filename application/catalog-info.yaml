@@ -41,6 +41,8 @@ spec:
   lifecycle: production
   owner: user:krzysztof.tokarz_zen.com
   domain: test-domain
+  providesApis:
+    - api-name
   
 ---
 apiVersion: backstage.io/v1alpha1
