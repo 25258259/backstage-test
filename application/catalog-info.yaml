@@ -71,6 +71,7 @@ kind: API
 metadata:
   name: api-name
   description: Some description of the api-name interface
+  title: API TO TEST
 spec:
   type: openapi
   lifecycle: production
